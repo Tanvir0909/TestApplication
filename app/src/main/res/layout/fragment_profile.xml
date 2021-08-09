@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Tanvir Ahmed Rajib"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textSize="@dimen/_26sdp"
                     android:textStyle="bold" />
@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_4sdp"
                     android:gravity="center"
-                    android:text="email@email.com"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textSize="@dimen/_12sdp" />
 
@@ -71,7 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="01752040764"
+                        android:text=""
                         android:textColor="@color/black"
                         android:textSize="@dimen/_14sdp" />
 
@@ -106,7 +106,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="01752040764"
+                            android:text=""
                             android:textColor="#707070"
                             android:textSize="@dimen/_12sdp" />
 

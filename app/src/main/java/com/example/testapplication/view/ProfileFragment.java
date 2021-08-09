@@ -60,9 +60,9 @@ public class ProfileFragment extends Fragment implements OnMapReadyCallback {
 
         observerViewModel();
 
-      //  Toast.makeText(getContext(), String.valueOf(Utils.userId).toString(), Toast.LENGTH_SHORT).show();
+        //  Toast.makeText(getContext(), String.valueOf(Utils.userId).toString(), Toast.LENGTH_SHORT).show();
 
-        
+
 // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 /*        SupportMapFragment mapFragment = (SupportMapFragment) getActivity().getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -73,7 +73,7 @@ public class ProfileFragment extends Fragment implements OnMapReadyCallback {
         if (savedInstanceState != null) {
             mapViewBundle = savedInstanceState.getBundle(MAP_VIEW_BUNDLE_KEY);
         }
-     //   mapViewBundle = mapViewBundle.getBundle(MAP_VIEW_BUNDLE_KEY);
+        //   mapViewBundle = mapViewBundle.getBundle(MAP_VIEW_BUNDLE_KEY);
         mapView = profileBinding.map;
         mapView.onCreate(mapViewBundle);
         mapView.getMapAsync(this);
@@ -119,7 +119,6 @@ public class ProfileFragment extends Fragment implements OnMapReadyCallback {
         );
 
 
-
     }
 
     public static String convertDate(String dateTime) {
@@ -135,7 +134,6 @@ public class ProfileFragment extends Fragment implements OnMapReadyCallback {
         }
 
     }
-
 
 
     @Override

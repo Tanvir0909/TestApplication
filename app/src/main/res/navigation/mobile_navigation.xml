@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_user_list" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.testapplication.view.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_add_user"
+        android:name="com.example.testapplication.view.AddNewUserFragment"
+        android:label="Add New User"
+        tools:layout="@layout/fragment_add_new_user" />
 </navigation>

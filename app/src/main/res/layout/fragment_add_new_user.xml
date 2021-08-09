@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
 
+<layout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.SignupActivity"
-        android:background="@color/white">
-
-
+        tools:context=".view.AddNewUserFragment">
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -22,18 +19,8 @@
                 android:padding="@dimen/_20sdp">
 
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sign_up"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_26sdp"
-                    android:textStyle="bold" />
-
                 <androidx.coordinatorlayout.widget.CoordinatorLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/_20sdp"
                     android:layout_height="@dimen/_110sdp">
                     <de.hdodenhof.circleimageview.CircleImageView
                         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -105,7 +92,7 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:background="@drawable/round_edittext"
                     android:inputType="number"
-                    android:hint="Enter Mobile Number"
+                    android:hint="Phone"
                     android:padding="@dimen/_10sdp"
                     android:textColor="@color/black"
                     android:textColorHint="#929292"
@@ -145,47 +132,19 @@
                 </RadioGroup>
 
                 <Button
-                    android:id="@+id/btn_signup"
+                    android:id="@+id/btn_save"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/btn_signup"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:backgroundTint="@color/black"
                     android:padding="@dimen/_10sdp"
-                    android:text="@string/sign_up"
+                    android:text="Save"
                     android:textColor="@color/white"
                     android:textAllCaps="false"
                     android:textSize="@dimen/_14sdp"
                     app:cornerRadius="@dimen/_8sdp" />
 
-
-                <LinearLayout
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:id="@+id/bottom_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_50sdp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_4sdp"
-                        android:text="Already have an account?"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_14sdp" />
-
-                    <TextView
-                        android:id="@+id/login_account"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_4sdp"
-                        android:text="Login"
-                        android:textColor="#007AFF"
-                        android:textSize="@dimen/_14sdp"
-                        android:textStyle="bold" />
-                </LinearLayout>
 
 
 
@@ -194,11 +153,7 @@
         </androidx.core.widget.NestedScrollView>
 
 
-
-
-
-
-
     </LinearLayout>
 </layout>
+
 

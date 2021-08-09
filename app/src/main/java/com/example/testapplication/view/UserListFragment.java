@@ -14,6 +14,8 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -43,6 +45,7 @@ public class UserListFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         rvUserList.setLayoutManager(layoutManager);
         rvUserList.setAdapter(userListAdapter);
+
 
         userListAdapter.setOnClickFromJobList(new UserListAdapter.OnClickFromUserList() {
             @Override
@@ -100,6 +103,12 @@ public class UserListFragment extends Fragment {
                 });
 
             }
+        });
+
+
+        userListBinding.addNewUser.setOnClickListener(l -> {
+            NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+            navController.navigate(R.id.navigation_add_user);
         });
 
         observerViewModelForUserList();

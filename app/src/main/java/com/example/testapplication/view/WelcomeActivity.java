@@ -30,12 +30,12 @@ public class WelcomeActivity extends AppCompatActivity {
         welcomeBinding = DataBindingUtil.setContentView(this, R.layout.activity_welcome);
 
 
-        welcomeBinding.btnLogin.setOnClickListener(l->{
+        welcomeBinding.btnLogin.setOnClickListener(l -> {
             Intent intent = new Intent(this, LoginActivity.class);
             this.startActivity(intent);
         });
 
-        welcomeBinding.btnSignup.setOnClickListener(l->{
+        welcomeBinding.btnSignup.setOnClickListener(l -> {
             Intent intent = new Intent(this, SignupActivity.class);
             this.startActivity(intent);
         });
