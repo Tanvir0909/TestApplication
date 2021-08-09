@@ -34,6 +34,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
 
     public interface OnClickFromUserList {
         void onClickRemove(int id);
+        void onClickDetails(int id);
+
     }
 
     public void updateUserList(List<User> users) {
@@ -80,6 +82,11 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
 
             userListBinding.deleteUser.setOnClickListener(l->{
                 onClickFromUserList.onClickRemove(userList.getId());
+            });
+
+
+            userListBinding.details.setOnClickListener(l->{
+                onClickFromUserList.onClickDetails(userList.getId());
             });
 
 

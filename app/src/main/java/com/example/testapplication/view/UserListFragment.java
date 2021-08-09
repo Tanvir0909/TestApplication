@@ -1,5 +1,6 @@
 package com.example.testapplication.view;
 
+
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.testapplication.R;
 import com.example.testapplication.adapter.UserListAdapter;
 import com.example.testapplication.databinding.FragmentUserListBinding;
+import com.example.testapplication.utility.Utils;
 import com.example.testapplication.viewmodel.ListViewModel;
 
 import java.util.ArrayList;
@@ -102,6 +104,13 @@ public class UserListFragment extends Fragment {
                     alertDialog.cancel();
                 });
 
+            }
+
+            @Override
+            public void onClickDetails(int id) {
+                Utils.userDetailsId = id;
+                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+                navController.navigate(R.id.navigation_user_details);
             }
         });
 

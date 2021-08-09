@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (isError != null) {
                         if (isError)
                             Toast.makeText(LoginActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
-
+                        viewModel.usersLoadError = new MutableLiveData<>();
                     }
 
                 }
