@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SignupActivity"
+        android:background="@color/white">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_26sdp"
+                    android:textStyle="bold" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_height="@dimen/_110sdp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="2dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_edit_person"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginLeft="@dimen/_80sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/round_image_button_black"
+                        android:padding="@dimen/_6sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_camera" />
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <EditText
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:hint="@string/name"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:hint="@string/email"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/round_edittext"
+                    android:hint="@string/password"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/mbl_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/round_edittext"
+                    android:inputType="number"
+                    android:hint="Enter Mobile Number"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:checkedButton="@id/radioMale"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Male"
+                        android:checked="false"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <RadioButton
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:id="@+id/radioFemale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Female"
+                        android:checked="false"
+                        android:textSize="@dimen/_14sdp" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btn_signup"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:backgroundTint="@color/black"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_14sdp"
+                    app:cornerRadius="@dimen/_8sdp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Already have an account?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/login_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Login"
+                        android:textColor="#007AFF"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+</layout>
+
